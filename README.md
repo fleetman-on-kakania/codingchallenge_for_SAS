@@ -2,9 +2,9 @@
 
 Just a few notes:
 
-- Apart from the existing assertions, I added my own assertion method to the simple unit tests ('SelfExplanatoryAssertion'). It helped me to understand the problem and to implement the solution. As well it could help to understand the interpretation i gave, as the way it is the problem defined in the 'Readme.md' it is ambiguous,
+- Apart from the existing assertions, I added my own assertion method to the simple unit tests ('SelfExplanatoryAssert'). It helped me to understand the problem and to implement the solution. As well it could help to understand the interpretation i gave, as the way the problem is defined in the 'Readme.md' is ambiguous,
 
-- besides it could be said that it is more dificult to understand the existing assertions in 'SearchEngineTestsBase' than the implementation of the SearchEngine. It could be said "they need more testing than the engine itself",
+- besides it could be said that it is more dificult to understand the existing assertions in 'SearchEngineTestsBase' than the implementation of the SearchEngine. It could be said about the existing assertions that "they need more testing than the engine itself",
 
 - this search engine implementation seems to be good enough performance-wise as the perf test takes 11ms in my machine
 

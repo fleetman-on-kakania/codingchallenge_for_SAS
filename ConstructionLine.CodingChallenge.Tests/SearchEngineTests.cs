@@ -284,27 +284,5 @@ namespace ConstructionLine.CodingChallenge.Tests
             Assert.AreEqual(larges, results.SizeCounts.Single(x => x.Size == Size.Large).Count, $"Larges count is wrong");
         }
 
-        private void PrintResults(SearchResults results)
-        {
-            Console.WriteLine($"Total shirts: {results.Shirts.Count}");
-            foreach (var shirt in results.Shirts)
-            {
-                Console.WriteLine($"---Total shirts: {shirt.Name}");
-            }
-            var Red = results.ColorCounts.Single(x => x.Color == Color.Red).Count;
-            var Black = results.ColorCounts.Single(x => x.Color == Color.Black).Count;
-            var Blue = results.ColorCounts.Single(x => x.Color == Color.Blue).Count;
-            var White = results.ColorCounts.Single(x => x.Color == Color.White).Count;
-            var Yellow = results.ColorCounts.Single(x => x.Color == Color.Yellow).Count;
-
-            Console.WriteLine($"Red: {Red},Black: {Black},Blue: {Blue},White: {White},Yellow: {Yellow}");
-
-            var Small = results.SizeCounts.Single(x => x.Size == Size.Small).Count;
-            var Medium = results.SizeCounts.Single(x => x.Size == Size.Medium).Count;
-            var Large = results.SizeCounts.Single(x => x.Size == Size.Large).Count;
-
-            Console.WriteLine($"Small: {Small},Medium: {Medium},Large: {Large}");
-
-        }
     }
 }
